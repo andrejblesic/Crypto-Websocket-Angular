@@ -38,13 +38,12 @@ export class WebsocketService {
               "matches"
           ]
         });
+        this.priceSocket.subscribe(
+          message => this.handleMessage(message),
+          error => console.log(error),
+          () => console.log("completed")
+        )
       });
-
-    this.priceSocket.subscribe(
-      message => this.handleMessage(message),
-      error => console.log(error),
-      () => console.log("completed")
-    )
   }
 
   ngOnDestroy() {
