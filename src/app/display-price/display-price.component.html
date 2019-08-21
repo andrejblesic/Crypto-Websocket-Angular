@@ -1,0 +1,11 @@
+<!--<div class="price-card" *ngFor="let price of service.observableObj | keyvalue">
+  <div class="currency-pair">
+    {{price.key}}
+  </div>
+  <div onpropertychange="test()" class="currency-price">
+    {{price.value | async}}
+  </div>
+</div>-->
+<div class="card-wrapper" *ngFor="let price of service.observableObj | keyvalue">
+  <app-price [priceKey]="price.key" [priceValue]="price.value | async"></app-price>
+</div>

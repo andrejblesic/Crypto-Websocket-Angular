@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+.price-card {
+  font-family: "Varela Round", sans-serif;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 8px;
+  background: orange;
+  height: 150px;
+  width: 200px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+  .price-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid brown;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+    border-radius: 8px 8px 0 0;
+  }
+  .price-num {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
