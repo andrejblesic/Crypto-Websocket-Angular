@@ -11,8 +11,6 @@ export class DisplayPriceComponent implements OnInit {
 
   constructor(private service: WebsocketService) {}
 
-  @Output() currentPrices:object = {};
-
   ngOnInit() {
     this.service.subToSocket();
     for (let price in this.service.observableObj) {

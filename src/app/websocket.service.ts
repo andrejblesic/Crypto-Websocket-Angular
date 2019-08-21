@@ -9,7 +9,7 @@ import { of } from "rxjs";
 export class WebsocketService {
   private priceSocket = webSocket("wss://ws-feed.pro.coinbase.com");
 
-  private product_ids = []; //["BTC-USD", "BTC-EUR", "ETH-USD", "ETH-EUR", "ETH-BTC", "LTC-USD", "LTC-EUR", "LTC-BTC", "XRP-USD", "XRP-EUR", "XRP-BTC", "BCH-USD", "BCH-EUR", "BCH-BTC"];
+  private product_ids:Array<string> = [];
 
   public observableObj:object = {};
 
